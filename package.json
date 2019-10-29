@@ -5,15 +5,14 @@
   "main": "dubplus.js",
   "scripts": {
     "sass": "node ./tasks/sassbundle",
-    "ext": "IS_EXT=true node tasks/rollup.config.js && node ./tasks/extensions",
-    "ext-zip": "node ./tasks ext-zip",
-    "ext-deploy": "node ./tasks ext-deploy",
+    "ext": "IS_EXT=true node tasks/rollup.config.js",
+    "watch:ext": "IS_EXT=true WATCH=true node tasks/rollup.config.js",
     "test": "jest -i ./tests --config ./tests/jest.config.js",
     "build": "node tasks/rollup.config.js",
     "beta": "BUILD=beta node tasks/rollup.config.js",
     "release": "BUILD=release node tasks/rollup.config.js",
     "start": "WATCH=true node tasks/rollup.config.js",
-    "start:firefox": "web-ext run --source-dir ./extensions/Firefox",
+    "firefox": "web-ext run --source-dir ./extensions/Firefox",
     "husky_build" : "npm test && npm run build && git add ."
   },
   "husky": {

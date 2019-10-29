@@ -1,9 +1,19 @@
 .dubplus-custom-bg {
-  width: 100%; 
-  height: 100%; 
-  z-index: -999998; 
-  position: fixed; 
-  background-size: cover; 
-  top: 0; 
+  width: 100%;
+  height: 100%;
+  z-index: -999998;
+  position: fixed;
+  background-size: cover;
+  background-position-x: center;
+  background-position-y: center;
+  background-attachment: fixed;
+  top: 0;
   left: 0;
+  display: none;
+}
+
+@media screen and (min-width: 48em) {
+  .dubplus-custom-bg {
+    display: block;
+  }
 }

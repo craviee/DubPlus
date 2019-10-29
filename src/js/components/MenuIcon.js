@@ -1,5 +1,4 @@
 import {h, Component} from 'preact';
-import settings from '@/utils/UserSettings.js';
 
 class MenuIcon extends Component {
   state = {
@@ -26,7 +25,7 @@ class MenuIcon extends Component {
   render(props, state) {
     return (
       <div className="dubplus-icon" onClick={this.toggle}>
-        <img src={`${settings.srcRoot}/images/dubplus.svg`} alt="DubPlus Icon" />
+        <img src="https://dub.plus/assets/img/logo.svg" alt="DubPlus Icon" />
       </div>
     )
   }
